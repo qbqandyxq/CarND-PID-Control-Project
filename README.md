@@ -1,6 +1,16 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+------
+
+I don't how to reset the simulation through the main.cpp, so I just chose the hyper parameters through manual tuning. Actually, I set my hyper parameters just imitate the tuition video. 
+
+The first part of the PID is proportional, the formula is cute*Kp. First Kp begin with 1.0,  and I found that the turning radius changed violent, finally I set Kp as 0.15. 
+
+The diferential I set as 3.0,
+
+The integral value I set as 0.004 to 0.002,
+
 ---
 
 ## Dependencies
