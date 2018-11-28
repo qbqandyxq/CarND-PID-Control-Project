@@ -11,9 +11,9 @@ PID::PID() {}
 PID::~PID() {}
 
 void PID::Init(double Kp, double Ki, double Kd) {
-    this.Kp = Kp;
-    this.Ki = Ki;
-    this.Kd = Kd;
+    this->Kp = Kp;
+    this->Ki = Ki;
+    this->Kd = Kd;
     
     p_error=0.;
     i_error=0.;
@@ -30,9 +30,6 @@ void PID::UpdateError(double cte) {
     //diferential error
     d_error =  cte - pre_p;
     pre_p=cte;
-    
-    d_error = cte - prev_cte;
-    prev_cte = cte;
 }
 
 double PID::TotalError() {
